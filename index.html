@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11100f">
+  <meta name="description" content="Find live performances by song, city, venue, and year. An independent fan project born in Columbus, Ohio.">
+  <title>ATROFD — Find your live version</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="songs.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#performances">Skip to live searches</a>
+  <p class="fan-notice">Fan-Made Tool</p>
+  <header><a class="wordmark" href="#" aria-label="ATROFD home">ATROFD<span>↗</span></a><nav aria-label="Main navigation"><a href="#performances">FIND A LIVE VERSION</a><a href="#about">THE IDEA <span>↗</span></a></nav></header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <div class="eyebrow"><span><i></i> A SINGLE-SONG OBSESSION</span><span>EST. IN COLUMBUS, OH</span></div>
+      <h1 id="title">AT THE RISK OF<br><span>FEELING DUMB</span></h1>
+      <div class="hero-bottom"><p>... Consult youtube I guess</p><a class="button" data-search="artist-wide" href="https://www.youtube.com/results?search_query=Twenty+One+Pilots+live&amp;sp=CAI%3D">FIND RECENT UPLOADS <span>↗</span></a></div>
+    </section>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-group">DO YOU HEAR THE ROBOTS HUMMING? <span>✳</span> DO YOU HEAR THE ROBOTS HUMMING? <span>✳</span></div>
+        <div class="ticker-group">DO YOU HEAR THE ROBOTS HUMMING? <span>✳</span> DO YOU HEAR THE ROBOTS HUMMING? <span>✳</span></div>
+      </div>
+    </div>
+    <div class="ticker-controls"><button id="ticker-toggle" type="button" aria-pressed="false">Pause banner</button></div>
+    <section id="performances" class="performances" aria-labelledby="performances-title">
+      <div class="section-top"><div><p class="label">01 / FIND YOUR MOMENT</p><h2 id="performances-title">BACK IN THE CROWD.</h2></div><p>Every year brings a new version of the show.<br>Find live performances by artist, place, and time.</p></div>
+      <div class="searches">
+        <a class="search-card" data-search="" href="https://www.youtube.com/results?search_query=At+the+Risk+of+Feeling+Dumb+live"><span class="card-meta">01 / ALL LOCATIONS <span>↗</span></span><div class="graphic graphic-one" aria-hidden="true">LIVE<span>LIVE</span>LIVE</div><h3>Chase the latest.</h3><p>Find recent live uploads from every stage.</p><span class="card-link">SEARCH YOUTUBE ↗</span></a>
+        <a class="search-card" data-search="front row" href="https://www.youtube.com/results?search_query=At+the+Risk+of+Feeling+Dumb+live+front+row"><span class="card-meta">02 / FROM THE FLOOR <span>↗</span></span><div class="graphic graphic-three" aria-hidden="true"><span>)))</span></div><h3>Right up front.</h3><p>Find a view from the heart of the room.</p><span class="card-link">SEARCH YOUTUBE ↗</span></a>
+      </div>
+      <form id="city-search"><label for="city">WERE YOU THERE?</label><div><input id="song" name="song" aria-label="Song name (required)" aria-describedby="song-note" maxlength="150" value="At the Risk of Feeling Dumb" placeholder="Song name" required><input id="city" name="city" aria-label="City or venue (optional)" maxlength="100" placeholder="City or venue (optional)"><select id="year" name="year" aria-label="Show year (optional)"><option value="" selected>Any</option></select><button type="submit">FIND YOUR SHOW <span>↗</span></button></div></form>
+      <p id="song-note" class="search-note" role="status" aria-live="polite"></p>
+      <p class="search-note">Links open YouTube searches sorted by upload date. Results are supplied by YouTube and may include unrelated videos.</p>
+    </section>
+    <section id="about" class="about"><p class="label">02 / THE AFTERSHOW</p><div><h2>SOME SONGS<br>FOLLOW YOU HOME.</h2><p>This one did. Built after a night in Columbus, Ohio, ATROFD is a small corner of the internet for a single song and the people who keep it alive in a crowd.</p><p>No noise. Just another way back to the show.</p><a href="#performances">FIND YOUR WAY BACK ↗</a></div><span class="asterisk" aria-hidden="true">✳</span></section>
+  </main>
+  <footer><a class="wordmark" href="#">ATROFD<span>↗</span></a><div class="legal-disclaimer"><p>Independent fan project. Not affiliated with, sponsored by, or endorsed by the artist or any associated rights holders. All referenced trademarks and third-party content belong to their respective owners. This site links to YouTube searches and does not host music or videos.</p><p>This site is provided for free and no profit is made off of it. It is owned by 0xFACADE, LLC. Please contact the owner for any inquiries or concerns. No sponsorships are taken or considered.</p></div><a href="#">BACK TO TOP ↑</a></footer>
+</body>
+</html>
